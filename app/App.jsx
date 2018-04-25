@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import { HomePage } from './components/presentational/HomePage.jsx';
 import { Footer } from './components/presentational/footer.jsx';
 import './styles/template.less';
-import Logo from './assets/jp-logo.svg';
+
 
 export default class App extends React.Component {
    render() {
@@ -12,7 +11,7 @@ export default class App extends React.Component {
         <div>  
            
              
-           <HomePage  logo={Logo} />
+           <HomePage/>
         
            <Footer />     
         </div>    
