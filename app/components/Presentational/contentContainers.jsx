@@ -20,6 +20,7 @@ export class ContentContainer extends React.Component {
     }
 }
 
+// TODO: Automat column production so we only have one content container component, and the number of columns is derived automatically from passed props. //
 
 export class ContentContainerTwoCol extends React.Component {
     render() {
@@ -28,12 +29,12 @@ export class ContentContainerTwoCol extends React.Component {
                 <div className="content">
                     <div class="section two-col">
                         <div className="box">
-                            <this.props.contentTypeLeft content={this.props.contentLeft}>
-                            </this.props.contentTypeLeft>
+                            <this.props.contentTypeOne content={this.props.contentOne}>
+                            </this.props.contentTypeOne>
                         </div>
                         <div className="box">
-                            <this.props.contentTypeRight content={this.props.contentRight}>
-                            </this.props.contentTypeRight>
+                            <this.props.contentTypeTwo content={this.props.contentTwo}>
+                            </this.props.contentTypeTwo>
                         </div>
                     </div>
                 </div>
