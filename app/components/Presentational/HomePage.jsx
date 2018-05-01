@@ -14,19 +14,21 @@ export class HomePage extends React.Component {
   render() {
     return (
       <div>
-        <ContentContainer contentType={ImageContent} content={Logo} imgAlt="Jacket Poinard" id="home-landing-wrapper" colorScheme="highlight-color">     
+        <ContentContainer contentType={ImageContent} content={Logo} imgAlt="Jacket Poinard" id="home-landing-wrapper" colorScheme="highlight-color" numberOfColumns={1}>     
         </ContentContainer>
-        
+
         <SectionBounder link="#next" icon="&#x25BC;">
         </SectionBounder>   
+
+   
        
-        <ContentContainerTwoCol colorScheme="light" id="next" contentTypeOne={SimpleTextContent} contentOne={Constants.mobyText}  contentTypeTwo={ImageContent} contentTwo={Whale}>     
+        <ContentContainerTwoCol colorScheme="dark" id="next" contentTypeOne={SimpleTextContent} contentOne={Constants.mobyText}  contentTypeTwo={ImageContent} contentTwo={Whale}>     
         </ContentContainerTwoCol>
         
-        <SectionBounder link="#next" icon="&#x25BC;" colorScheme="dark">
+        <SectionBounder id="first divider" link="#next" icon="&#x25BC;" colorScheme="highlight">
         </SectionBounder>   
 
-        <ContentContainer colorScheme="dark" id="next" contentType={SimpleTextContent} content={Constants.mobyText}>     
+        <ContentContainer colorScheme="highlight" id="next" contentType={SimpleTextContent} content={Constants.mobyText}>     
         </ContentContainer>
         
         <ContentContainerTwoCol colorScheme="light" id="next" contentTypeTwo={SimpleTextContent} contentTwo={Constants.suessText}  contentTypeOne={ImageContent} contentOne={Whale}>

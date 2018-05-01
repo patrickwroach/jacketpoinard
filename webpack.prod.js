@@ -5,6 +5,10 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
 	devtool: 'source-map',
+	output: {
+		filename: 'index.js',
+		path: __dirname + '/dist'
+   },
 	plugins: [
 		new UglifyJSPlugin({
 			sourceMap: true
